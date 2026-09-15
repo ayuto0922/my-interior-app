@@ -1,0 +1,40 @@
+/* ① フォントは必ず一番上に置く */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ② Tailwind の読み込み（これがないとWordみたいになる） */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ③ 全体のスタイル（モダンUI） */
+html, body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f7f8;
+  color: #333;
+}
+
+/* ガラスモーフィズム */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* カード影（モダン） */
+.card-shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* 画像の角丸 */
+img {
+  border-radius: 10px;
+}
+
+/* リンク */
+a {
+  color: #3b82f6;
+}
+a:hover {
+  color: #2563eb;
+}
